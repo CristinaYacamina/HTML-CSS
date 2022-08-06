@@ -19,6 +19,19 @@ body {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.CreaTuCuenta img {
+    width: auto;
+    height: 662px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 4px 4px 10px #B0B0B0;
+}
+
+
+.conjunto{
+    display: flex;
+}
+
 .container { /* comportamiento que queremos que tenga la tabla */
 	width: 100%;
 	max-width: 1000px;
@@ -36,7 +49,8 @@ body {
     top: 232px;
     background: #FFFFFF;
     box-shadow: 4px 4px 10px #B0B0B0;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 #divFormulario { 	/*comportamiento del formulario en general*/
@@ -56,6 +70,7 @@ body {
     position: sticky;
     border-radius: 8px;
 }
+
 #divCuenta {
 	display: flex;
 	flex-direction: row;
@@ -153,4 +168,16 @@ td { /*celdas dentro del formulario*/
     text-align: center;
     color: #9747FF;
     outline: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .CreaTuCuenta {
+        display: none;
+    }
+
+    #formulario {
+        border-radius: 8px;
+    }
 }

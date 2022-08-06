@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabla básica con HTML y CSS</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="formulario-estilos-htmlcss.css"
-    />
-  </head>
 
-  <body>
-	<div class="contenedor">
-    <form border="0" id="formulario">
-      <div id="divFormulario">
-        <label id="register">Regístrate</label>
-        <!--en el CSS se hace mención a la id con #-->
-        <!--
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabla básica con HTML y CSS</title>
+  <link rel="stylesheet" type="text/css" href="formulario-estilos-htmlcss.css" />
+</head>
+
+<body>
+  <div class="conjunto">
+    <div class="CreaTuCuenta">
+      <img src="https://images.unsplash.com/photo-1599050751791-a3d0feff527b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+      width="50%"
+      height="auto">
+    </div>
+   
+    <div class="contenedor">
+      <form border="0" id="formulario">
+        <div id="divFormulario">
+          <label id="register">Regístrate</label>
+          <!--en el CSS se hace mención a la id con #-->
+          <!--
 		<thead>
           <tr>
 			<label id="register">Regístrate</label>
           </tr>
         </thead>
 		-->
-        <tr>
-          <td>
-            <input type="text" placeholder="Nombre" id="input" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="text" placeholder="Apellidos" id="input" />
-          </td>
-        </tr>
-        <tr>
-          <td><input type="text" placeholder="E-mail" id="input" /></td>
-          <!--El type="text" permite escribir en el recuadro-->
-        </tr>
-        <tr>
-          <td>
-            <input type="password" placeholder="Contraseña" id="input" />
-          </td>
-          <!--El type="password" oculta las letras-->
-        </tr>
-        <tr>
-          <td>
-            <input
-              type="password"
-              placeholder="Confirmar contraseña"
-              id="input"
-            />
-          </td>
-        </tr>
-      </div>
-      <div id="divAceptarCancelar">
-        <input type="button" value="Registrarme" class="botonRegistrarme" />
-        <input type="button" value="Cancelar" class="botonCancelar" />
-      </div>
-      <div id="divCuenta">
-        <p><a href="#" class="botonYatengocuenta">Ya tengo cuenta</a></p>
-      </div>
-    </form>
-	</div>
-  </body>
-  <footer></footer>
+          <tr>
+            <td>
+              <input type="text" placeholder="Nombre" id="input" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" placeholder="Apellidos" id="input" />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="E-mail" id="input" /></td>
+            <!--El type="text" permite escribir en el recuadro-->
+          </tr>
+          <tr>
+            <td>
+              <input type="password" placeholder="Contraseña" id="input" />
+            </td>
+            <!--El type="password" oculta las letras-->
+          </tr>
+          <tr>
+            <td>
+              <input type="password" placeholder="Confirmar contraseña" id="input" />
+            </td>
+          </tr>
+        </div>
+        <div id="divAceptarCancelar">
+          <input type="button" value="Registrarme" class="botonRegistrarme" />
+          <input type="button" value="Cancelar" class="botonCancelar" />
+        </div>
+        <div id="divCuenta">
+          <p><a class="botonYatengocuenta">Ya tengo cuenta</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<footer></footer>
+
 </html>
