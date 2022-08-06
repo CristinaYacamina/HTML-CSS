@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla básica con HTML y CSS</title>
+    <link rel="stylesheet" href="formulario-estilos-htmlcss.css">
+</head>
+
+<body>
+    <div>
+        <form border="0" id="formulario">
+            <!--en el CSS se hace mención a la id con #-->
+            <thead>
+                <tr>
+                    <th>Regístrate</th>
+                </tr>
+            </thead>
+            <tr>
+                <td><label><input type="text" placeholder="Nombre"></label></td>
+            </tr>
+            <tr>
+                <td><label><input type="text" placeholder="Apellidos"></label></td>
+            </tr>
+            <tr>
+                <td><label><input type="text" placeholder="e-mail"></label></td>
+                <!--El type="text" permite escribir en el recuadro-->
+            </tr>
+            <tr>
+                <td><label><input type="password" placeholder="Contraseña"></label></td>
+                <!--El type="password" oculta las letras-->
+            </tr>
+            <input type="button" value="Registrarme" class="botonRegistrarme">
+            <input type="button" value="Cancelar" class="botonCancelar">
+            <p><a href="#" class="botonYatengocuenta">Ya tengo cuenta</a></p>
+        </form>
+    </div>
+</body>
+<footer></footer>

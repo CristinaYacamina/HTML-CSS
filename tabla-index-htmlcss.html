@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla básica con HTML y CSS</title>
+    <link rel="stylesheet" href="tabla-estilos-htmlcss.css">
+</head>
+
+<body>
+    <div class="container">
+        <table class="table">
+            <!--en el CSS se hace mención al table con .-->
+            <caption>Personal</caption>
+            <thead>
+                <!--Contenido de la cabecera EN la tabla-->
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Puesto</th>
+                    <th>Experiencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Contenido del cuerpo en la tabla-->
+                <tr>
+                    <!--Columnas-->
+                    <td data-label="Nombre">María</td>
+                    <!--Data: para hacerlo responsive, Label: como nombre en este caso, puede ser el que queramos. En el CSS se edita con @media-->
+                    <td data-label="Apellidos">Perez</td>
+                    <td data-label="Puesto">Sistemas</td>
+                    <td data-label="Experiencia">4 años</td>
+                </tr>
+                <tr>
+                    <td data-label="Nombre">Juan</td>
+                    <td data-label="Apellidos">Espinoza</td>
+                    <td data-label="Puesto">Atención al cliente</td>
+                    <td data-label="Experiencia">5 años</td>
+                </tr>
+                <tr>
+                    <td data-label="Nombre">Esther</td>
+                    <td data-label="Apellidos">Mendoza</td>
+                    <td data-label="Puesto">Marketing</td>
+                    <td data-label="Experiencia">7 meses</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

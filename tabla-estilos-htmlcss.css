@@ -1,0 +1,88 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 255, 255); /*color del fondo de la pantalla general*/
+}
+
+
+.container { /* comportamiento que queremos que tenga la tabla */
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.table { /* tabla en general */
+    width: 100%;
+    border: 1px solid rgba(217, 217, 217, 0.752);
+    border-collapse: collapse; /* si no lo ponemos se pondra un borde por defecto. El collapse hara que este pegado */
+    margin: 0;
+    padding: 0;
+    table-layout: fixed; /* ayuda a que la tabla se carge mas rapido. Fixed hace que cada columna tenga el mismo ancho */
+}
+
+.table caption { /* título de la tabla */
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+
+.table tr { /* filas de la tabla */
+    background-color: #f8f8f8cd;
+    border: 1px solid #ddd;
+}
+
+
+.table th, .table td { /* th: encabezado dentro de la tabla, td: datos de la tabla */
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 4px solid #ddd;
+}
+
+.table thead th {   /* mencion a los titulos dentro de la tabla */
+    background-color: #ddd; /* color de titulos de dentro de la tabla */
+}
+
+
+.table tbody tr:hover { /* color del hover */
+    background-color: lightblue;
+}
+
+
+.table tbody td:hover { /* color del hover sobre el hover anterior */
+    background-color: rgb(130, 177, 192);
+}
+
+@media screen and (max-width: 600px) { /* comportamiento que queremos para la tabla como responsive */ /*max-width: es el tamano minimo al que le permitiremos achicarse*/
+    .table {
+        border: 0px;
+    }
+    .table caption {
+        font-size: 22px;
+    }
+    .table thead { /*para hacer desaparecer los titulos de la tabla tal y como se veian en grande */
+        display: none;
+    }
+    .table tr { /* filas de la tabla */
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    } 
+    .table th, .table td {
+        font-size: 12 px;
+    } 
+    .table td { /* comportamiento de cada fila */
+        display: block; /* manera de presentarlo, en este caso en bloque */
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+    .table td:last-child {
+        border-bottom: 0px;
+    }
+    .table td::before { /*valores que le daremos a los titulos de dentro de cada fila, anteriormente hechos desaparecer */
+        content: attr(data-label); /*este apartado hace reaparecer los titulos de dentro de la tabla, es decir, el data-label="Nombre" que se le habia atribuido a cada fila en el HTML */
+        font-weight: bold;
+        float: left; /* apartado para alinear los titulos */
+    }
+
+}
