@@ -49,9 +49,6 @@ body {
 }
 
 
-.table tbody td:hover { /* color del hover sobre el hover anterior */
-    background-color: rgb(130, 177, 192);
-}
 
 @media screen and (max-width: 600px) { /* comportamiento que queremos para la tabla como responsive */ /*max-width: es el tamano minimo al que le permitiremos achicarse*/
     .table {
