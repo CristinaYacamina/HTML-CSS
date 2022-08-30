@@ -30,6 +30,7 @@ body {
 
 .conjunto{
     display: flex;
+    margin-bottom: 100px;
 }
 
 .container { /* comportamiento que queremos que tenga la tabla */
